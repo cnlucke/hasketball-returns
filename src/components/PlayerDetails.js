@@ -25,8 +25,8 @@ const PlayerDetails = ({ selectedPlayer }) => {
 
 export default PlayerDetails
 
-{/* <div>
-  <img src={selectedPlayer.image_url}></img>
-  <p>{selectedPlayer.name}</p>
-
-</div> */}
+// <div>
+//   <img src={selectedPlayer.image_url}></img>
+//   <p>{selectedPlayer.name}</p>
+//
+// </div>

@@ -1,11 +1,13 @@
 import React from 'react'
+import { selectPlayer } from '../actions'
+import { connect } from 'react-redux'
 
-const Player = ({ player, selectPlayer }) => {
+const Player = (props) => {
   return (
-    <div onClick={() => selectPlayer(player)}>
-      <p>{player.name}</p>
+    <div onClick={() => props.selectPlayer(props.player)}>
+      <p>{props.player.name}</p>
     </div>
   )
 }
 
-export default Player
+export default connect(null, { selectPlayer })(Player)
